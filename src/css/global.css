@@ -71,6 +71,11 @@ body {
  border-radius: 0 2rem 2rem 0;
 }
 
+.rightSide > div:first-child {
+  height: 24px;
+  width: 100%;
+}
+
 input {
   border: none;
   text-align: center;
@@ -78,6 +83,7 @@ input {
   background-color: transparent;
   font-weight: 700;
   max-width: 40vw;
+  color: var(--textColor);
 }
 
 input:focus {
@@ -89,6 +95,7 @@ input::placeholder {
 }
 
 .resultText {
+  display: none;
   color: var(--textColor);
   font-size: 6rem;
   font-weight: 700;
@@ -105,3 +112,16 @@ div>i {
   background-color: var(--placeholderColor);
   border-radius: 40px;
 }
+
+#iconHistoric {
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.historicList {
+  /* display: none; */
+  display: flex;
+}
+
